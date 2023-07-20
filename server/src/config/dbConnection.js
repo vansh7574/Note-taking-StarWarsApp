@@ -1,5 +1,5 @@
 import { set, connect, connection } from 'mongoose';
-require('dotenv').config({ path: 'config/.env' });
+require('dotenv').config({ path: 'src/config/.env' });
 
 // Database Name & URL
 const DATABASE_NAME = process.env.DATABASE_NAME;
