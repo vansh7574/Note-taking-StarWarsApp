@@ -19,7 +19,7 @@ Client -> Gets data from the back-end APIs and presents it to the end user
 Database Used -> MongoDB
 
 
-#HOW TO RUN
+#**HOW TO RUN**
 1 -> First Clone/download the Repo in a directory on your computer 
 2 -> Ensure You have Node.js installed
 3 -> Ensure you have NPM installed
