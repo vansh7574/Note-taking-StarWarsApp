@@ -14,12 +14,12 @@ const App = () => {
     setActiveView(newValue);
   };
   return (
-    <Box className="App">
-      <Tabs value={activeView} onChange={handleChangeTabs} centered>
-        <Tab value={"NOTES"} label="NOTES" />
+    <Box className="App" >
+      <Tabs value={activeView} onChange={handleChangeTabs} textColor="white" sx={{fontSize:'20px'}} centered>
+        <Tab value={"NOTES"} label="NOTES"  />
         <Tab value={"CHARACTER"} label="CHARACTER LIST" />
       </Tabs>
-      <Box mt="10px">
+      <Box mt="10px" >
         {activeView === "CHARACTER" ? <CharacterList /> : <Notes />}
       </Box>
     </Box>

@@ -74,6 +74,7 @@ const ListNote = ({ data, handleChangeMode, handleDeleteNoteById }) => {
         variant="text"
         startIcon={<AddIcon />}
         onClick={() => handleChangeMode("ADD")}
+        sx={{color:'white', fontSize:'20px'}}
       >
         Add New Note
       </Button>

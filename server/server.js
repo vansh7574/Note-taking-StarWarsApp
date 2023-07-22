@@ -1,10 +1,10 @@
 import express, { json } from 'express';
-require('dotenv').config({ path: 'config/.env' });
+require('dotenv').config({ path: 'src/config/.env' });
 import cors from 'cors';
 
 // DB connection
-import './config/dbConnection';
-import noteRoute from './routes/note.route';
+import './src/config/dbConnection';
+import noteRoute from './src/routes/note.route';
 
 const server = express();
 
