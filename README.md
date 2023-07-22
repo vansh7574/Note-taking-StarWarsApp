@@ -1,9 +1,13 @@
 # Note-taking-StarWarsApp
 This Project has Two Sections 
-  1->First Section is Simple CRUD operations on Notes. By this it means you can edit, read , creat and delete your own notes
-     Node and Express are used in the Back-End with react as the Front-End. MongoDB is the Database Used
-  2-> Second Section is star wars character look Up using the provided SWAPI. User has to type the character name and the website will return all the relevant details of the character.
-      This is mainly accomplished by react in the front end
+  
+  #First Section 
+  is Simple CRUD operations on Notes. By this, it means you can edit, read, create and delete your own notes.
+     Node and Express for defining routes/APIs are used in the Back-End with react as the Front-End. MongoDB is the Database Used.
+  #Second Section 
+  is a star wars character look Up using the provided SWAPI. The user has to type the character name and the website will return all the relevant details of the character.
+      This is mainly accomplished by React in the front end
+  #Important Note -> In the second section where it says "Click to get all the star wars characters" will return the results a bit slowly. Give it some seconds to get all the records   
 
 # Folder Structure
 It is simple! we have two folders Client and Server and a ReadMe which you are currently reading.
