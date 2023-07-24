@@ -2,6 +2,7 @@ import { set, connect, connection } from 'mongoose';
 require('dotenv').config({ path: 'src/config/.env' });
 
 // Database Name & URL
+{/* file for making a connection to the DataBase */ }
 const DATABASE_NAME = process.env.DATABASE_NAME;
 export const CONNECTION_URL = process.env.CONNECTION_URL + DATABASE_NAME;
 (async () => {
