@@ -96,7 +96,7 @@ const CharacterList = () => {
         }}
         fullWidth
       />
-      <Button type="button" onClick={handleSearch}>
+      <Button type="button" onClick={handleSearch} sx={{color:'#000000', fontSize:'25px', bgcolor: "#fff", marginTop:'20px'}}>
         Search
       </Button>
 
