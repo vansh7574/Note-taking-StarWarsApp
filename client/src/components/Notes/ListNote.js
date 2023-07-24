@@ -15,6 +15,7 @@ import ModeEditIcon from "@mui/icons-material/ModeEdit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import AddIcon from "@mui/icons-material/Add";
 
+{/* This component renders a table with a list of all the notes stored in the DataBase */ }
 const ListNote = ({ data, handleChangeMode, handleDeleteNoteById }) => {
   return (
     <Box display="flex" flexDirection="column" gap="10px">
