@@ -7,6 +7,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
+{/* This component renders a table with a list a all 82 star wars character */ }
 const AllChars = ({allChars}) => {
     return (
        <> 
