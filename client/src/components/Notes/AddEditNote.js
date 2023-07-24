@@ -9,6 +9,7 @@ import {
   DialogTitle,
 } from "@mui/material";
 
+{/* This component renders a dialog box so that a user can add or edit his notes */ }
 const AddEditNote = ({
   currentMode,
   currentNote,
@@ -31,7 +32,7 @@ const AddEditNote = ({
     isAddMode,
     isEditMode,
   ]);
-
+  
   return (
     <Dialog
       open={isEditMode || isAddMode}
