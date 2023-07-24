@@ -1,5 +1,6 @@
 import Note from '../models/note';
 
+{/* function for getting all notes stored in the DB */ }
 const getAllNotes = async (req, res) => {
 	try {
 		const notes = await Note.find({
@@ -18,6 +19,7 @@ const getAllNotes = async (req, res) => {
 	}
 };
 
+{/* function for getting a specific note stored in the DB */ }
 const getNoteById = async (req, res) => {
 	try {
 		const { noteId } = req.params;
@@ -35,6 +37,7 @@ const getNoteById = async (req, res) => {
 	}
 };
 
+{/* function for updating a specific note(by sending in the id) stored in the DB */ }
 const updateNoteById = async (req, res) => {
 	try {
 		const { noteId } = req.params;
@@ -60,6 +63,7 @@ const updateNoteById = async (req, res) => {
 	}
 };
 
+{/* function for deleting a specific note(by sending in the id) stored in the DB */ }
 const deleteNoteById = async (req, res) => {
 	try {
 		const { noteId } = req.params;
@@ -84,6 +88,7 @@ const deleteNoteById = async (req, res) => {
 	}
 };
 
+{/* function for creating a specific note(by sending in the id) stored in the DB */ }
 const createNote = async (req, res) => {
 	try {
 		const note = new Note(req.body);
