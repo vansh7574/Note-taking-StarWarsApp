@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const baseURL = process.env.REACT_APP_API_ENDPOINT + "/notes";
-
+{/* function for getting all notes */}
 export const getNotes = async () => {
   try {
     const { data } = await axios.get(baseURL);
@@ -11,6 +11,7 @@ export const getNotes = async () => {
   }
 };
 
+{/* function for adding a new note */}
 export const addNewNote = async (description) => {
   try {
     const { status } = await axios.post(baseURL, { description });
@@ -20,6 +21,7 @@ export const addNewNote = async (description) => {
   }
 };
 
+{/* function for editing a specific note */}
 export const editNote = async ({ description, isDeleted, id }) => {
   try {
     const { status } = await axios.put(baseURL + "/" + id, {
@@ -32,6 +34,7 @@ export const editNote = async ({ description, isDeleted, id }) => {
   }
 };
 
+{/* function for getting a specific note */}
 export const getNoteById = async (id) => {
   try {
     const { data } = await axios.get(baseURL + "/" + id);
@@ -41,6 +44,7 @@ export const getNoteById = async (id) => {
   }
 };
 
+{/* function for deleting a specific note */}
 export const deleteNoteById = async (id) => {
   try {
     const { status } = await axios.delete(baseURL + "/" + id);
