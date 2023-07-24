@@ -11,6 +11,7 @@ import {
   getNotes,
 } from "../services/notes.service";
 
+{/* This component renders the entire view of adding, editing, deleting and viewing all notes  */}
 const Notes = () => {
   const [notes, setNotes] = useState([]);
   const [currentMode, setCurrentMode] = useState(null);
